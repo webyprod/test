@@ -1,0 +1,13 @@
+<table>
+
+  <thead>
+    <th>ID</th>
+    <th>USERNAME</th>
+    <th>EMAIL</th>
+  </thead>
+
+  <tbody>
+    <tr app-row *ngFor="let item of items" [id]="item.id" [username]="item.username" [email]="item.email" [ngStyle]="{backgroundColor: getColor(item.id)}"></tr>
+  </tbody>
+
+</table>

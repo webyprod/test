@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exo';
+  titre: string;
+  soustitre: string;
+  description: string;
+  lien: string;
+
+  constructor(){
+    this.titre = "TITRE";
+    this.soustitre = "SOUSTITRE";
+    this.description = "DESCRIPTION";
+    this.lien = "LIEN";
+  }
 }
